@@ -5,17 +5,21 @@ export default StyleSheet.create({
     margin: 7,
     borderRadius: 10,
     marginLeft: 0,
-    width:180,
-    flex:2,
-    flexDirection:'column'
+    width:Dimensions.get('window').width/2,
+    flexDirection:'column',
+    width:Dimensions.get('window').width/2-14, //Ekranı ikiye böl, kenar boşluklarını hesaba kat
     },
 
   
     inner_container:{  marginTop: 10,
         marginBottom: 5,
         alignItems: "center",
-        flex:1,
-         flexDirection:'row'
+         flexDirection:'column',
+         justifyContent:'space-between',
+         alignItems:'baseline',
+         alignItems: 'center',
+         
+         
         
 
     },
@@ -46,4 +50,3 @@ export default StyleSheet.create({
 
 
 })
-
